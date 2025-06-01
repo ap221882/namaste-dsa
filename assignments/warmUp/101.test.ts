@@ -6,6 +6,6 @@ import {
 
 describe("Template test", () => {
   it("adds numbers", () => {
-    expect(3 + 3).toBe(9);
+    expect(3 + 3).toBe(6);
   });
 });

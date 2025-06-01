@@ -1,1 +1,1 @@
-console.log("Hello from new DSA assignment!");
+export * from "./101"

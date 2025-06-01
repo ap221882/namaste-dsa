@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "day-01": "ts-node assignments/day-01/index.ts"
+    "warm-up": "ts-node assignments/warm-up/index.ts"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,28 @@
+{
+  "name": "namaste-dsa",
+  "version": "1.0.0",
+  "description": "Repository containing the work and assignments including projects which I make during the Namaste DSA Course by @akshaymarch7",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "day-01": "ts-node assignments/day-01/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap221882/namaste-dsa.git"
+  },
+  "keywords": [],
+  "author": "Ajay Pathak - https://www.linkedin.com/in/ajay-pathak-webdeveloper/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap221882/namaste-dsa/issues"
+  },
+  "homepage": "https://github.com/ap221882/namaste-dsa#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@vitest/ui": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}

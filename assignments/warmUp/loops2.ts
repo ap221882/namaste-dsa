@@ -30,4 +30,38 @@ function countNegatives(arr: number[]): number {
   return count
 }
 
-export { countNegatives, findElementIndex };
+// Find largest and smallest number in an array
+
+
+function findLargest(arr: number[]): number {
+
+  let largestNum = Number.MIN_SAFE_INTEGER;
+  /**
+   * Difference between MIN_SAFE_INTEGER and NEGATIVE_INFINITY is, MIN_SAFE's n-1 is also a number while NEGATIVE INFINITY's is less than the minimum representable number
+   */
+  // OR let largestNum = -Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largestNum) {
+      largestNum = arr[i]
+    }
+  }
+
+  return largestNum
+}
+
+
+function findSmallest(arr: number[]): number {
+  let smallestNumber = Number.POSITIVE_INFINITY;
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    if (element < smallestNumber) {
+      smallestNumber = element
+    }
+  }
+
+
+  return smallestNumber
+}
+
+export { countNegatives, findElementIndex, findLargest, findSmallest };

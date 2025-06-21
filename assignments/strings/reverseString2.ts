@@ -43,3 +43,7 @@ function reverseStr2(s: string, k: number): string {
 
   return sArr.join("")
 };
+
+
+// Space complexity - o(n) in some where strings are not immutable so would need to create an array. Else
+// o(1), where strings are immutable

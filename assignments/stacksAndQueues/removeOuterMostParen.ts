@@ -46,3 +46,26 @@ function removeOuterParentheses2(s: string): string {
 
   return str
 };
+
+
+function removeOuterParentheses3(s: string): string {
+  let tracker = 0;
+  let str = ''
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(") {
+      if (tracker !== 0) {
+        str += s[i];
+      }
+      tracker++
+    } else {
+      if (tracker !== 1) {
+        str += s[i];
+      }
+      tracker--
+    }
+
+
+  }
+
+  return str
+};

@@ -23,3 +23,26 @@ function removeOuterParentheses(s: string): string {
 
   return str
 };
+
+
+function removeOuterParentheses2(s: string): string {
+  let stack = [];
+  let str = ''
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(") {
+      if (stack.length !== 0) {
+        str += s[i];
+      }
+      stack.push("(")
+    } else {
+      if (stack.length !== 1) {
+        str += s[i];
+      }
+      stack.pop()
+    }
+
+
+  }
+
+  return str
+};
